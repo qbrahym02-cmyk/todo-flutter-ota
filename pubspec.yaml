@@ -1,0 +1,30 @@
+name: todo_ota
+description: "تطبيق مهام مع تحديث عن بُعد (Remote Config + OTA)"
+publish_to: 'none'
+
+# الرقم بعد + (build) يُستبدل تلقائياً في GitHub Actions برقم التشغيل
+# غيّر 1.0.0 عند كل إصدار مهم إذا أردت
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  http: ^1.6.0
+  intl: ^0.20.3
+  ota_update: ^7.1.0
+  package_info_plus: ^10.2.2
+  shared_preferences: ^2.5.6
+  web: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
